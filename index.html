@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Compatibilidade Amorosa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Calcule a compatibilidade amorosa de duas pessoas com base em seus nomes
+      </h1>
+      <form>
+        <label for="seu-nome">Seu nome:</label>
+        <input type="text" id="seu-nome" name="seu-nome" required />
+        <label for="nome-outra-pessoa">Nome da outra pessoa:</label>
+        <input
+          type="text"
+          id="nome-outra-pessoa"
+          name="nome-outra-pessoa"
+          required
+        />
+        <button type="submit" id="calcular">Calcular</button>
+      </form>
+      <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
