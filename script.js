@@ -11,11 +11,7 @@ form.addEventListener("submit", function (event) {
   const compatibilidade = calcularCompatibilidade(seuNome, nomeOutraPessoa);
 
   // Exibição do resultado
-  const resultadoContainer = document.querySelector("#resultado-container");
-  resultadoContainer.innerHTML = `
-    <h2>Compatibilidade Amorosa</h2>
-    <p>A compatibilidade entre ${seuNome} e ${nomeOutraPessoa} é de ${compatibilidade}%</p>
-  `;
+  resultado.innerHTML = `A compatibilidade entre ${seuNome} e ${nomeOutraPessoa} é de ${compatibilidade}%`;
 });
 
 // Função para calcular a compatibilidade
