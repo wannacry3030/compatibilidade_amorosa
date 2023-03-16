@@ -1,13 +1,11 @@
 const form = document.querySelector("form");
-const seuNomeInput = document.querySelector("#seu-nome");
-const nomeOutraPessoaInput = document.querySelector("#nome-outra-pessoa");
-const resultadoDiv = document.querySelector("#resultado");
+const resultado = document.querySelector("#resultado");
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const seuNome = document.querySelector("#seu-nome").value;
+  const nomeOutraPessoa = document.querySelector("#nome-outra-pessoa").value;
+  const porcentagem = Math.floor(Math.random() * 101);
 
-  const seuNome = seuNomeInput.value;
-  const nomeOutraPessoa = nomeOutraPessoaInput.value;
-
-  resultadoDiv.innerText = `Olá ${seuNome} e ${nomeOutraPessoa}, vocês são compatíveis!`;
+  resultado.innerHTML = `<p>A chance de ${seuNome} e ${nomeOutraPessoa} darem certo é de ${porcentagem}%</p>`;
 });
